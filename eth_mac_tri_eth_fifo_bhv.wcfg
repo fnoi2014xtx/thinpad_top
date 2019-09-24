@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2221416666fs"></ZoomStartTime>
+      <ZoomEndTime time="2346916667fs"></ZoomEndTime>
+      <Cursor1Time time="2326000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="93"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="98" />
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/rx_axis_fifo_tdata" type="array">
+      <obj_property name="ElementShortName">rx_axis_fifo_tdata[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_fifo_tdata[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/rx_axis_fifo_tvalid" type="logic">
+      <obj_property name="ElementShortName">rx_axis_fifo_tvalid</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_fifo_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/tx_axis_fifo_tdata" type="array">
+      <obj_property name="ElementShortName">tx_axis_fifo_tdata[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_fifo_tdata[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/tx_axis_fifo_tvalid" type="logic">
+      <obj_property name="ElementShortName">tx_axis_fifo_tvalid</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_fifo_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/gtx_clk" type="logic">
+      <obj_property name="ElementShortName">gtx_clk</obj_property>
+      <obj_property name="ObjectShortName">gtx_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/glbl_rstn" type="logic">
+      <obj_property name="ElementShortName">glbl_rstn</obj_property>
+      <obj_property name="ObjectShortName">glbl_rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/rx_axi_rstn" type="logic">
+      <obj_property name="ElementShortName">rx_axi_rstn</obj_property>
+      <obj_property name="ObjectShortName">rx_axi_rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/tx_axi_rstn" type="logic">
+      <obj_property name="ElementShortName">tx_axi_rstn</obj_property>
+      <obj_property name="ObjectShortName">tx_axi_rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/refclk" type="logic">
+      <obj_property name="ElementShortName">refclk</obj_property>
+      <obj_property name="ObjectShortName">refclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/rx_mac_aclk" type="logic">
+      <obj_property name="ElementShortName">rx_mac_aclk</obj_property>
+      <obj_property name="ObjectShortName">rx_mac_aclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/rx_reset" type="logic">
+      <obj_property name="ElementShortName">rx_reset</obj_property>
+      <obj_property name="ObjectShortName">rx_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/rx_statistics_vector" type="array">
+      <obj_property name="ElementShortName">rx_statistics_vector[27:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_statistics_vector[27:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/rx_statistics_valid" type="logic">
+      <obj_property name="ElementShortName">rx_statistics_valid</obj_property>
+      <obj_property name="ObjectShortName">rx_statistics_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/rx_fifo_clock" type="logic">
+      <obj_property name="ElementShortName">rx_fifo_clock</obj_property>
+      <obj_property name="ObjectShortName">rx_fifo_clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/rx_fifo_resetn" type="logic">
+      <obj_property name="ElementShortName">rx_fifo_resetn</obj_property>
+      <obj_property name="ObjectShortName">rx_fifo_resetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/rx_axis_fifo_tready" type="logic">
+      <obj_property name="ElementShortName">rx_axis_fifo_tready</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_fifo_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/rx_axis_fifo_tlast" type="logic">
+      <obj_property name="ElementShortName">rx_axis_fifo_tlast</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_fifo_tlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/tx_mac_aclk" type="logic">
+      <obj_property name="ElementShortName">tx_mac_aclk</obj_property>
+      <obj_property name="ObjectShortName">tx_mac_aclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/tx_reset" type="logic">
+      <obj_property name="ElementShortName">tx_reset</obj_property>
+      <obj_property name="ObjectShortName">tx_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/tx_ifg_delay" type="array">
+      <obj_property name="ElementShortName">tx_ifg_delay[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_ifg_delay[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/tx_statistics_vector" type="array">
+      <obj_property name="ElementShortName">tx_statistics_vector[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_statistics_vector[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/tx_statistics_valid" type="logic">
+      <obj_property name="ElementShortName">tx_statistics_valid</obj_property>
+      <obj_property name="ObjectShortName">tx_statistics_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/tx_fifo_clock" type="logic">
+      <obj_property name="ElementShortName">tx_fifo_clock</obj_property>
+      <obj_property name="ObjectShortName">tx_fifo_clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/tx_fifo_resetn" type="logic">
+      <obj_property name="ElementShortName">tx_fifo_resetn</obj_property>
+      <obj_property name="ObjectShortName">tx_fifo_resetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/tx_axis_fifo_tready" type="logic">
+      <obj_property name="ElementShortName">tx_axis_fifo_tready</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_fifo_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/tx_axis_fifo_tlast" type="logic">
+      <obj_property name="ElementShortName">tx_axis_fifo_tlast</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_fifo_tlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/pause_req" type="logic">
+      <obj_property name="ElementShortName">pause_req</obj_property>
+      <obj_property name="ObjectShortName">pause_req</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/pause_val" type="array">
+      <obj_property name="ElementShortName">pause_val[15:0]</obj_property>
+      <obj_property name="ObjectShortName">pause_val[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/rgmii_txd" type="array">
+      <obj_property name="ElementShortName">rgmii_txd[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rgmii_txd[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/rgmii_tx_ctl" type="logic">
+      <obj_property name="ElementShortName">rgmii_tx_ctl</obj_property>
+      <obj_property name="ObjectShortName">rgmii_tx_ctl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/rgmii_txc" type="logic">
+      <obj_property name="ElementShortName">rgmii_txc</obj_property>
+      <obj_property name="ObjectShortName">rgmii_txc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/rgmii_rxd" type="array">
+      <obj_property name="ElementShortName">rgmii_rxd[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rgmii_rxd[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/rgmii_rx_ctl" type="logic">
+      <obj_property name="ElementShortName">rgmii_rx_ctl</obj_property>
+      <obj_property name="ObjectShortName">rgmii_rx_ctl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/rgmii_rxc" type="logic">
+      <obj_property name="ElementShortName">rgmii_rxc</obj_property>
+      <obj_property name="ObjectShortName">rgmii_rxc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/inband_link_status" type="logic">
+      <obj_property name="ElementShortName">inband_link_status</obj_property>
+      <obj_property name="ObjectShortName">inband_link_status</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/inband_clock_speed" type="array">
+      <obj_property name="ElementShortName">inband_clock_speed[1:0]</obj_property>
+      <obj_property name="ObjectShortName">inband_clock_speed[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/inband_duplex_status" type="logic">
+      <obj_property name="ElementShortName">inband_duplex_status</obj_property>
+      <obj_property name="ObjectShortName">inband_duplex_status</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/rx_configuration_vector" type="array">
+      <obj_property name="ElementShortName">rx_configuration_vector[79:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_configuration_vector[79:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/tx_configuration_vector" type="array">
+      <obj_property name="ElementShortName">tx_configuration_vector[79:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_configuration_vector[79:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/rx_mac_aclk_int" type="logic">
+      <obj_property name="ElementShortName">rx_mac_aclk_int</obj_property>
+      <obj_property name="ObjectShortName">rx_mac_aclk_int</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/tx_mac_aclk_int" type="logic">
+      <obj_property name="ElementShortName">tx_mac_aclk_int</obj_property>
+      <obj_property name="ObjectShortName">tx_mac_aclk_int</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/rx_reset_int" type="logic">
+      <obj_property name="ElementShortName">rx_reset_int</obj_property>
+      <obj_property name="ObjectShortName">rx_reset_int</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/tx_reset_int" type="logic">
+      <obj_property name="ElementShortName">tx_reset_int</obj_property>
+      <obj_property name="ObjectShortName">tx_reset_int</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/rx_axis_mac_tdata" type="array">
+      <obj_property name="ElementShortName">rx_axis_mac_tdata[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_mac_tdata[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/rx_axis_mac_tvalid" type="logic">
+      <obj_property name="ElementShortName">rx_axis_mac_tvalid</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_mac_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/rx_axis_mac_tlast" type="logic">
+      <obj_property name="ElementShortName">rx_axis_mac_tlast</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_mac_tlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/rx_axis_mac_tuser" type="logic">
+      <obj_property name="ElementShortName">rx_axis_mac_tuser</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_mac_tuser</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/tx_axis_mac_tdata" type="array">
+      <obj_property name="ElementShortName">tx_axis_mac_tdata[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_mac_tdata[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/tx_axis_mac_tvalid" type="logic">
+      <obj_property name="ElementShortName">tx_axis_mac_tvalid</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_mac_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/tx_axis_mac_tready" type="logic">
+      <obj_property name="ElementShortName">tx_axis_mac_tready</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_mac_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/tx_axis_mac_tlast" type="logic">
+      <obj_property name="ElementShortName">tx_axis_mac_tlast</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_mac_tlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/tx_axis_mac_tuser" type="logic">
+      <obj_property name="ElementShortName">tx_axis_mac_tuser</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_mac_tuser</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/rx_mac_reset" type="logic">
+      <obj_property name="ElementShortName">rx_mac_reset</obj_property>
+      <obj_property name="ObjectShortName">rx_mac_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/tx_mac_reset" type="logic">
+      <obj_property name="ElementShortName">tx_mac_reset</obj_property>
+      <obj_property name="ObjectShortName">tx_mac_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/tx_mac_resetn" type="logic">
+      <obj_property name="ElementShortName">tx_mac_resetn</obj_property>
+      <obj_property name="ObjectShortName">tx_mac_resetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/trimac_fifo_block/rx_mac_resetn" type="logic">
+      <obj_property name="ElementShortName">rx_mac_resetn</obj_property>
+      <obj_property name="ObjectShortName">rx_mac_resetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/rx_axis_tdata" type="array">
+      <obj_property name="ElementShortName">rx_axis_tdata[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_tdata[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/rx_axis_tvalid" type="logic">
+      <obj_property name="ElementShortName">rx_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_tvalid</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/tx_axis_tdata" type="array">
+      <obj_property name="ElementShortName">tx_axis_tdata[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tdata[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/tx_axis_tvalid" type="logic">
+      <obj_property name="ElementShortName">tx_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tvalid</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/axi_tclk" type="logic">
+      <obj_property name="ElementShortName">axi_tclk</obj_property>
+      <obj_property name="ObjectShortName">axi_tclk</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/axi_tresetn" type="logic">
+      <obj_property name="ElementShortName">axi_tresetn</obj_property>
+      <obj_property name="ObjectShortName">axi_tresetn</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/check_resetn" type="logic">
+      <obj_property name="ElementShortName">check_resetn</obj_property>
+      <obj_property name="ObjectShortName">check_resetn</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/enable_pat_gen" type="logic">
+      <obj_property name="ElementShortName">enable_pat_gen</obj_property>
+      <obj_property name="ObjectShortName">enable_pat_gen</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/enable_pat_chk" type="logic">
+      <obj_property name="ElementShortName">enable_pat_chk</obj_property>
+      <obj_property name="ObjectShortName">enable_pat_chk</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/enable_address_swap" type="logic">
+      <obj_property name="ElementShortName">enable_address_swap</obj_property>
+      <obj_property name="ObjectShortName">enable_address_swap</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/speed" type="array">
+      <obj_property name="ElementShortName">speed[1:0]</obj_property>
+      <obj_property name="ObjectShortName">speed[1:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/rx_axis_tlast" type="logic">
+      <obj_property name="ElementShortName">rx_axis_tlast</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_tlast</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/rx_axis_tuser" type="logic">
+      <obj_property name="ElementShortName">rx_axis_tuser</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_tuser</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/rx_axis_tready" type="logic">
+      <obj_property name="ElementShortName">rx_axis_tready</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_tready</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/tx_axis_tlast" type="logic">
+      <obj_property name="ElementShortName">tx_axis_tlast</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tlast</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/tx_axis_tready" type="logic">
+      <obj_property name="ElementShortName">tx_axis_tready</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tready</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/frame_error" type="logic">
+      <obj_property name="ElementShortName">frame_error</obj_property>
+      <obj_property name="ObjectShortName">frame_error</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/activity_flash" type="logic">
+      <obj_property name="ElementShortName">activity_flash</obj_property>
+      <obj_property name="ObjectShortName">activity_flash</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/rx_axis_tdata_int" type="array">
+      <obj_property name="ElementShortName">rx_axis_tdata_int[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_tdata_int[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/rx_axis_tvalid_int" type="logic">
+      <obj_property name="ElementShortName">rx_axis_tvalid_int</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_tvalid_int</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/rx_axis_tlast_int" type="logic">
+      <obj_property name="ElementShortName">rx_axis_tlast_int</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_tlast_int</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/rx_axis_tready_int" type="logic">
+      <obj_property name="ElementShortName">rx_axis_tready_int</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_tready_int</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/pat_gen_tdata" type="array">
+      <obj_property name="ElementShortName">pat_gen_tdata[7:0]</obj_property>
+      <obj_property name="ObjectShortName">pat_gen_tdata[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/pat_gen_tvalid" type="logic">
+      <obj_property name="ElementShortName">pat_gen_tvalid</obj_property>
+      <obj_property name="ObjectShortName">pat_gen_tvalid</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/pat_gen_tlast" type="logic">
+      <obj_property name="ElementShortName">pat_gen_tlast</obj_property>
+      <obj_property name="ObjectShortName">pat_gen_tlast</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/pat_gen_tready" type="logic">
+      <obj_property name="ElementShortName">pat_gen_tready</obj_property>
+      <obj_property name="ObjectShortName">pat_gen_tready</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/pat_gen_tready_int" type="logic">
+      <obj_property name="ElementShortName">pat_gen_tready_int</obj_property>
+      <obj_property name="ObjectShortName">pat_gen_tready_int</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/mux_tdata" type="array">
+      <obj_property name="ElementShortName">mux_tdata[7:0]</obj_property>
+      <obj_property name="ObjectShortName">mux_tdata[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/mux_tvalid" type="logic">
+      <obj_property name="ElementShortName">mux_tvalid</obj_property>
+      <obj_property name="ObjectShortName">mux_tvalid</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/mux_tlast" type="logic">
+      <obj_property name="ElementShortName">mux_tlast</obj_property>
+      <obj_property name="ObjectShortName">mux_tlast</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/mux_tready" type="logic">
+      <obj_property name="ElementShortName">mux_tready</obj_property>
+      <obj_property name="ObjectShortName">mux_tready</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/tx_axis_as_tdata" type="array">
+      <obj_property name="ElementShortName">tx_axis_as_tdata[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_as_tdata[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/tx_axis_as_tvalid" type="logic">
+      <obj_property name="ElementShortName">tx_axis_as_tvalid</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_as_tvalid</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/tx_axis_as_tlast" type="logic">
+      <obj_property name="ElementShortName">tx_axis_as_tlast</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_as_tlast</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/tx_axis_as_tready" type="logic">
+      <obj_property name="ElementShortName">tx_axis_as_tready</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_as_tready</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/DEST_ADDR" type="array">
+      <obj_property name="ElementShortName">DEST_ADDR[47:0]</obj_property>
+      <obj_property name="ObjectShortName">DEST_ADDR[47:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/SRC_ADDR" type="array">
+      <obj_property name="ElementShortName">SRC_ADDR[47:0]</obj_property>
+      <obj_property name="ObjectShortName">SRC_ADDR[47:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/MAX_SIZE" type="array">
+      <obj_property name="ElementShortName">MAX_SIZE[15:0]</obj_property>
+      <obj_property name="ObjectShortName">MAX_SIZE[15:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/MIN_SIZE" type="array">
+      <obj_property name="ElementShortName">MIN_SIZE[15:0]</obj_property>
+      <obj_property name="ObjectShortName">MIN_SIZE[15:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/ENABLE_VLAN" type="logic">
+      <obj_property name="ElementShortName">ENABLE_VLAN</obj_property>
+      <obj_property name="ObjectShortName">ENABLE_VLAN</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/VLAN_ID" type="array">
+      <obj_property name="ElementShortName">VLAN_ID[11:0]</obj_property>
+      <obj_property name="ObjectShortName">VLAN_ID[11:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dut/temac_pat_gen/VLAN_PRIORITY" type="array">
+      <obj_property name="ElementShortName">VLAN_PRIORITY[2:0]</obj_property>
+      <obj_property name="ObjectShortName">VLAN_PRIORITY[2:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+</wave_config>

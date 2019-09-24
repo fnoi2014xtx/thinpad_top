@@ -1,0 +1,58 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Sep 23 23:31:14 2019
+# Process ID: 3536
+# Current directory: C:/codes/thinpad_top
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10784 C:\codes\thinpad_top\thinpad_top.xpr
+# Log file: C:/codes/thinpad_top/vivado.log
+# Journal file: C:/codes/thinpad_top\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/codes/thinpad_top/thinpad_top.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+import_files -norecurse {C:/codes/eth_mac_ex/imports/eth_mac_ten_100_1g_eth_fifo.v C:/codes/eth_mac_ex/imports/eth_mac_basic_pat_gen.v}
+update_compile_order -fileset sources_1
+import_files -norecurse {C:/codes/eth_mac_ex/imports/eth_mac_axi_pat_check.v C:/codes/eth_mac_ex/imports/eth_mac_axi_mux.v C:/codes/eth_mac_ex/imports/eth_mac_axi_pipe.v C:/codes/eth_mac_ex/imports/eth_mac_axi_pat_gen.v C:/codes/eth_mac_ex/imports/eth_mac_rx_client_fifo.v C:/codes/eth_mac_ex/imports/eth_mac_address_swap.v C:/codes/eth_mac_ex/imports/eth_mac_tx_client_fifo.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+generate_target all [get_files C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/eth_mac.xci]
+export_ip_user_files -of_objects [get_files C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/eth_mac.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/eth_mac.xci] -directory C:/codes/thinpad_top/thinpad_top.ip_user_files/sim_scripts -ip_user_files_dir C:/codes/thinpad_top/thinpad_top.ip_user_files -ipstatic_source_dir C:/codes/thinpad_top/thinpad_top.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/codes/thinpad_top/thinpad_top.cache/compile_simlib/modelsim} {questa=C:/codes/thinpad_top/thinpad_top.cache/compile_simlib/questa} {riviera=C:/codes/thinpad_top/thinpad_top.cache/compile_simlib/riviera} {activehdl=C:/codes/thinpad_top/thinpad_top.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target all [get_files C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/pll_example/pll_example.xci]
+export_ip_user_files -of_objects [get_files C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/pll_example/pll_example.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/pll_example/pll_example.xci] -directory C:/codes/thinpad_top/thinpad_top.ip_user_files/sim_scripts -ip_user_files_dir C:/codes/thinpad_top/thinpad_top.ip_user_files -ipstatic_source_dir C:/codes/thinpad_top/thinpad_top.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/codes/thinpad_top/thinpad_top.cache/compile_simlib/modelsim} {questa=C:/codes/thinpad_top/thinpad_top.cache/compile_simlib/questa} {riviera=C:/codes/thinpad_top/thinpad_top.cache/compile_simlib/riviera} {activehdl=C:/codes/thinpad_top/thinpad_top.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_run {eth_mac_synth_1 pll_example_synth_1}
+wait_on_run eth_mac_synth_1
+
+wait_on_run eth_mac_synth_1
+wait_on_run pll_example_synth_1
+
+launch_simulation
+update_compile_order -fileset sources_1
+import_files -norecurse C:/codes/eth_mac_ex/eth_mac_ex.srcs/sources_1/ip/eth_mac/synth/common/eth_mac_block_sync_block.v
+update_compile_order -fileset sources_1
+add_files -norecurse -scan_for_includes {C:/codes/eth_mac_ex/imports/eth_mac_ten_100_1g_eth_fifo.v C:/codes/eth_mac_ex/imports/eth_mac_basic_pat_gen.v}
+import_files -force -norecurse {C:/codes/eth_mac_ex/imports/eth_mac_ten_100_1g_eth_fifo.v C:/codes/eth_mac_ex/imports/eth_mac_basic_pat_gen.v}
+update_compile_order -fileset sources_1
+launch_simulation
+import_files -force -norecurse {C:/codes/eth_mac_ex/imports/eth_mac_axi_pat_check.v C:/codes/eth_mac_ex/imports/eth_mac_frame_typ.v C:/codes/eth_mac_ex/imports/eth_mac_axi_pipe.v C:/codes/eth_mac_ex/imports/eth_mac_sync_block.v C:/codes/eth_mac_ex/imports/eth_mac_ten_100_1g_eth_fifo.v C:/codes/eth_mac_ex/imports/eth_mac_bram_tdp.v C:/codes/eth_mac_ex/imports/eth_mac_rx_client_fifo.v C:/codes/eth_mac_ex/imports/eth_mac_address_swap.v C:/codes/eth_mac_ex/imports/eth_mac_tx_client_fifo.v C:/codes/eth_mac_ex/imports/eth_mac_config_vector_sm.v C:/codes/eth_mac_ex/imports/eth_mac_clk_wiz.v C:/codes/eth_mac_ex/imports/eth_mac_example_design.v C:/codes/eth_mac_ex/imports/eth_mac_axi_mux.v C:/codes/eth_mac_ex/imports/eth_mac_example_design_clocks.v C:/codes/eth_mac_ex/imports/eth_mac_reset_sync.v C:/codes/eth_mac_ex/imports/eth_mac_axi_pat_gen.v C:/codes/eth_mac_ex/imports/eth_mac_fifo_block.v C:/codes/eth_mac_ex/imports/eth_mac_basic_pat_gen.v C:/codes/eth_mac_ex/imports/eth_mac_example_design_resets.v}
+update_compile_order -fileset sources_1
+launch_simulation
+source tb.tcl
+relaunch_sim
+save_wave_config {C:/codes/thinpad_top/eth_mac_tri_eth_fifo_bhv.wcfg}
+add_files -fileset sim_1 -norecurse C:/codes/thinpad_top/eth_mac_tri_eth_fifo_bhv.wcfg
+set_property xsim.view C:/codes/thinpad_top/eth_mac_tri_eth_fifo_bhv.wcfg [get_filesets sim_1]
+run 10 us
+close_sim
+launch_simulation
+open_wave_config C:/codes/thinpad_top/eth_mac_tri_eth_fifo_bhv.wcfg
+source tb.tcl
+run 10 us
+close_sim

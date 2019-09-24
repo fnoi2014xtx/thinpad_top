@@ -1,0 +1,809 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Sep 24 10:41:17 2019
+# Process ID: 7420
+# Current directory: C:/codes/thinpad_top
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1480 C:\codes\thinpad_top\thinpad_top.xpr
+# Log file: C:/codes/thinpad_top/vivado.log
+# Journal file: C:/codes/thinpad_top\vivado.jou
+#-----------------------------------------------------------
+start_gui
+oopen_project C:/codes/thinpad_top/thinpad_top.xprScanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+IINFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.open_project: Time (s): cpu = 00:00:34 ; elapsed = 00:00:17 . Memory (MB): peak = 685.133 ; gain = 115.961
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/tx_ptp_pkt_buff_init.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/CFImemory64Mb_top.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/CFImemory64Mb_bottom.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/example_frame.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/CFImemory64Mb_top.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/CFImemory64Mb_bottom.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/example_frame.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/common/eth_mac_block_reset_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_block_reset_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/common/eth_mac_block_sync_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_block_sync_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_clk_en_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_clk_en_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/physical/eth_mac_rgmii_v2_0_if.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_rgmii_v2_0_if
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_support
+INFO: [VRFC 10-2458] undeclared symbol gtx_mmcm_rst, assumed default net type wire [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support.v:152]
+INFO: [VRFC 10-2458] undeclared symbol gtx_mmcm_locked, assumed default net type wire [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support.v:153]
+INFO: [VRFC 10-2458] undeclared symbol idelayctrl_ready, assumed default net type wire [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support.v:161]
+INFO: [VRFC 10-2458] undeclared symbol idelayctrl_reset, assumed default net type wire [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support.v:163]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support_clocking.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_support_clocking
+INFO: [VRFC 10-2458] undeclared symbol clkout0, assumed default net type wire [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support_clocking.v:121]
+INFO: [VRFC 10-2458] undeclared symbol clkout1, assumed default net type wire [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support_clocking.v:123]
+INFO: [VRFC 10-2458] undeclared symbol clkout2, assumed default net type wire [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support_clocking.v:125]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support_resets.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_support_resets
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/pll_example/pll_example_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll_example_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/pll_example/pll_example.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll_example
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sim_1/new/28F640P30.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BankLib
+INFO: [VRFC 10-311] analyzing module TimingDataModule
+INFO: [VRFC 10-311] analyzing module TimingLibModule
+INFO: [VRFC 10-311] analyzing module BlockLockModule
+INFO: [VRFC 10-311] analyzing module CFIqueryModule
+INFO: [VRFC 10-311] analyzing module DataErrorModule
+INFO: [VRFC 10-311] analyzing module ConfigRegModule
+INFO: [VRFC 10-311] analyzing module SignatureModule
+INFO: [VRFC 10-311] analyzing module CUIdecoder1
+INFO: [VRFC 10-311] analyzing module CUIdecoder2
+INFO: [VRFC 10-311] analyzing module CUIdecoder_Busy1
+INFO: [VRFC 10-311] analyzing module EraseModule
+INFO: [VRFC 10-311] analyzing module MemoryModule
+INFO: [VRFC 10-311] analyzing module OutputBufferModule
+INFO: [VRFC 10-311] analyzing module ProgramModule
+INFO: [VRFC 10-311] analyzing module BuffEnhancedFactProgramModule
+INFO: [VRFC 10-311] analyzing module ProtectRegModule
+INFO: [VRFC 10-311] analyzing module ReadModule
+INFO: [VRFC 10-311] analyzing module StatusRegModule
+INFO: [VRFC 10-311] analyzing module KernelModule
+INFO: [VRFC 10-311] analyzing module x28fxxxp30
+INFO: [VRFC 10-311] analyzing module BurstModule
+INFO: [VRFC 10-311] analyzing module BlankCheckModule
+INFO: [VRFC 10-311] analyzing module ProgramBufferModule
+INFO: [VRFC 10-311] analyzing module DebugModule
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/SEG7_LUT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SEG7_LUT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/async.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module async_transmitter
+INFO: [VRFC 10-311] analyzing module async_receiver
+INFO: [VRFC 10-311] analyzing module ASSERTION_ERROR
+INFO: [VRFC 10-311] analyzing module BaudTickGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sim_1/new/clock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'clk_50M' is not allowed [C:/codes/thinpad_top/thinpad_top.srcs/sim_1/new/clock.v:10]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sim_1/new/cpld_model.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpld_model
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/eth_conf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_conf
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/eth_mac_rx_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_rx_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sim_1/new/flag_sync_cpld.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flag_sync_cpld
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sim_1/new/sram_model.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sram_model
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/thinpad_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module thinpad_top
+ERROR: [VRFC 10-1247] port connections cannot be mixed ordered and named [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/thinpad_top.v:289]
+ERROR: [VRFC 10-2865] module 'thinpad_top' ignored due to previous errors [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/thinpad_top.v:3]
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 710.199 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/tx_ptp_pkt_buff_init.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/CFImemory64Mb_top.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/CFImemory64Mb_bottom.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/example_frame.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/CFImemory64Mb_top.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/CFImemory64Mb_bottom.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/example_frame.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/common/eth_mac_block_reset_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_block_reset_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/common/eth_mac_block_sync_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_block_sync_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_clk_en_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_clk_en_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/physical/eth_mac_rgmii_v2_0_if.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_rgmii_v2_0_if
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_support
+INFO: [VRFC 10-2458] undeclared symbol gtx_mmcm_rst, assumed default net type wire [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support.v:152]
+INFO: [VRFC 10-2458] undeclared symbol gtx_mmcm_locked, assumed default net type wire [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support.v:153]
+INFO: [VRFC 10-2458] undeclared symbol idelayctrl_ready, assumed default net type wire [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support.v:161]
+INFO: [VRFC 10-2458] undeclared symbol idelayctrl_reset, assumed default net type wire [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support.v:163]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support_clocking.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_support_clocking
+INFO: [VRFC 10-2458] undeclared symbol clkout0, assumed default net type wire [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support_clocking.v:121]
+INFO: [VRFC 10-2458] undeclared symbol clkout1, assumed default net type wire [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support_clocking.v:123]
+INFO: [VRFC 10-2458] undeclared symbol clkout2, assumed default net type wire [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support_clocking.v:125]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support_resets.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_support_resets
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/pll_example/pll_example_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll_example_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/pll_example/pll_example.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll_example
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sim_1/new/28F640P30.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BankLib
+INFO: [VRFC 10-311] analyzing module TimingDataModule
+INFO: [VRFC 10-311] analyzing module TimingLibModule
+INFO: [VRFC 10-311] analyzing module BlockLockModule
+INFO: [VRFC 10-311] analyzing module CFIqueryModule
+INFO: [VRFC 10-311] analyzing module DataErrorModule
+INFO: [VRFC 10-311] analyzing module ConfigRegModule
+INFO: [VRFC 10-311] analyzing module SignatureModule
+INFO: [VRFC 10-311] analyzing module CUIdecoder1
+INFO: [VRFC 10-311] analyzing module CUIdecoder2
+INFO: [VRFC 10-311] analyzing module CUIdecoder_Busy1
+INFO: [VRFC 10-311] analyzing module EraseModule
+INFO: [VRFC 10-311] analyzing module MemoryModule
+INFO: [VRFC 10-311] analyzing module OutputBufferModule
+INFO: [VRFC 10-311] analyzing module ProgramModule
+INFO: [VRFC 10-311] analyzing module BuffEnhancedFactProgramModule
+INFO: [VRFC 10-311] analyzing module ProtectRegModule
+INFO: [VRFC 10-311] analyzing module ReadModule
+INFO: [VRFC 10-311] analyzing module StatusRegModule
+INFO: [VRFC 10-311] analyzing module KernelModule
+INFO: [VRFC 10-311] analyzing module x28fxxxp30
+INFO: [VRFC 10-311] analyzing module BurstModule
+INFO: [VRFC 10-311] analyzing module BlankCheckModule
+INFO: [VRFC 10-311] analyzing module ProgramBufferModule
+INFO: [VRFC 10-311] analyzing module DebugModule
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/SEG7_LUT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SEG7_LUT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/async.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module async_transmitter
+INFO: [VRFC 10-311] analyzing module async_receiver
+INFO: [VRFC 10-311] analyzing module ASSERTION_ERROR
+INFO: [VRFC 10-311] analyzing module BaudTickGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sim_1/new/clock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'clk_50M' is not allowed [C:/codes/thinpad_top/thinpad_top.srcs/sim_1/new/clock.v:10]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sim_1/new/cpld_model.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpld_model
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/eth_conf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_conf
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/eth_mac_rx_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_rx_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sim_1/new/flag_sync_cpld.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flag_sync_cpld
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sim_1/new/sram_model.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sram_model
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/thinpad_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module thinpad_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/vga.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 726.121 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1e0777dd008c45fcbaffd6b18f2c35e9 --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_9 -L xbip_pipe_v3_0_5 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L axi_lite_ipif_v3_0_4 -L tri_mode_ethernet_mac_v9_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3363] function 'getTime' has no return value assignment [C:/codes/thinpad_top/thinpad_top.srcs/sim_1/new/include/TimingData.h:182]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package tri_mode_ethernet_mac_v9_0_13.tx_pack
+Compiling package tri_mode_ethernet_mac_v9_0_13.common_pack
+Compiling package tri_mode_ethernet_mac_v9_0_13.ptp_pack
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package tri_mode_ethernet_mac_v9_0_13.rx_pack
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=20.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.pll_example_clk_wiz
+Compiling module xil_defaultlib.pll_example
+Compiling module xil_defaultlib.eth_conf
+Compiling module xil_defaultlib.SEG7_LUT
+Compiling module xil_defaultlib.BaudTickGen(ClkFrequency=5000000...
+Compiling module xil_defaultlib.async_receiver(ClkFrequency=5000...
+Compiling module xil_defaultlib.BaudTickGen(ClkFrequency=5000000...
+Compiling module xil_defaultlib.async_transmitter(ClkFrequency=5...
+Compiling module xil_defaultlib.vga(WIDTH=12,HSIZE=800,HFP=856,H...
+Compiling module unisims_ver.MMCME2_ADV(CLKIN1_PERIOD=8.0,CLK...
+Compiling module unisims_ver.BUFGCE
+Compiling module xil_defaultlib.eth_mac_support_clocking
+Compiling module unisims_ver.FDPE_default
+Compiling module xil_defaultlib.eth_mac_block_reset_sync
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.eth_mac_block_sync_block
+Compiling module xil_defaultlib.eth_mac_support_resets
+Compiling module unisims_ver.IDELAYCTRL_default
+Compiling module xil_defaultlib.eth_mac_clk_en_gen
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.ODDR(DDR_CLK_EDGE="SAME_EDGE")
+Compiling module unisims_ver.BUFIO
+Compiling module unisims_ver.BUFR_default
+Compiling module unisims_ver.IDELAYE2_default
+Compiling module unisims_ver.IDDR(DDR_CLK_EDGE="SAME_EDGE_PIP...
+Compiling module xil_defaultlib.eth_mac_rgmii_v2_0_if_default
+Compiling architecture rtl of entity tri_mode_ethernet_mac_v9_0_13.tri_mode_ethernet_mac_v9_0_13_sync_reset [tri_mode_ethernet_mac_v9_0_13_sy...]
+Compiling architecture rtl of entity tri_mode_ethernet_mac_v9_0_13.tri_mode_ethernet_mac_v9_0_13_sync_reset [\tri_mode_ethernet_mac_v9_0_13_s...]
+Compiling module tri_mode_ethernet_mac_v9_0_13.tri_mode_ethernet_mac_v9_0_13_gm...
+Compiling module tri_mode_ethernet_mac_v9_0_13.tri_mode_ethernet_mac_v9_0_13_gm...
+Compiling module tri_mode_ethernet_mac_v9_0_13.tri_mode_ethernet_mac_v9_0_13_ip...
+Compiling module tri_mode_ethernet_mac_v9_0_13.tri_mode_ethernet_mac_v9_0_13_tx...
+Compiling module tri_mode_ethernet_mac_v9_0_13.tri_mode_ethernet_mac_v9_0_13_rx...
+Compiling module tri_mode_ethernet_mac_v9_0_13.tri_mode_ethernet_mac_v9_0_13_rx...
+Compiling module unisims_ver.LUT4
+Compiling module tri_mode_ethernet_mac_v9_0_13.tri_mode_ethernet_mac_v9_0_13_tx...
+Compiling module tri_mode_ethernet_mac_v9_0_13.tri_mode_ethernet_mac_v9_0_13_pf...
+Compiling module tri_mode_ethernet_mac_v9_0_13.tri_mode_ethernet_mac_v9_0_13_rx...
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture structural of entity tri_mode_ethernet_mac_v9_0_13.tri_mode_ethernet_mac_v9_0_13_sync_block [tri_mode_ethernet_mac_v9_0_13_sy...]
+Compiling module tri_mode_ethernet_mac_v9_0_13.tri_mode_ethernet_mac_v9_0_13_tx...
+Compiling module tri_mode_ethernet_mac_v9_0_13.tri_mode_ethernet_mac_v9_0_13_co...
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture fdce_v of entity unisim.FDCE [fdce_default]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture vcc_v of entity unisim.VCC [vcc_default]
+Compiling architecture gnd_v of entity unisim.GND [gnd_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture schematic of entity tri_mode_ethernet_mac_v9_0_13.CC8CE [cc8ce_default]
+Compiling architecture schematic of entity tri_mode_ethernet_mac_v9_0_13.CC2CE [cc2ce_default]
+Compiling architecture rtl of entity tri_mode_ethernet_mac_v9_0_13.CRC_64_32 [crc_64_32_default]
+Compiling architecture rtl of entity tri_mode_ethernet_mac_v9_0_13.CRC32_8 [crc32_8_default]
+Compiling architecture rtl of entity tri_mode_ethernet_mac_v9_0_13.TX_STATE_MACH [\TX_STATE_MACH(c_half_duplex=fal...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(0,15)\]
+Compiling architecture rtl of entity tri_mode_ethernet_mac_v9_0_13.tri_mode_ethernet_mac_v9_0_13_tx [\tri_mode_ethernet_mac_v9_0_13_t...]
+Compiling architecture rtl of entity tri_mode_ethernet_mac_v9_0_13.STATE_MACHINES [state_machines_default]
+Compiling architecture rtl of entity tri_mode_ethernet_mac_v9_0_13.DECODE_FRAME [decode_frame_default]
+Compiling architecture rtl of entity tri_mode_ethernet_mac_v9_0_13.PARAM_CHECK [param_check_default]
+Compiling architecture rtl of entity tri_mode_ethernet_mac_v9_0_13.tri_mode_ethernet_mac_v9_0_13_rx [\tri_mode_ethernet_mac_v9_0_13_r...]
+Compiling module unisims_ver.RAM64X1D
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.SRL16E_default
+Compiling module tri_mode_ethernet_mac_v9_0_13.tri_mode_ethernet_mac_v9_0_13_ad...
+Compiling module tri_mode_ethernet_mac_v9_0_13.tri_mode_ethernet_mac_v9_0_13_ad...
+Compiling module tri_mode_ethernet_mac_v9_0_13.tri_mode_ethernet_mac_v9_0_13(C_...
+Compiling module xil_defaultlib.eth_mac_block
+Compiling module xil_defaultlib.eth_mac_support
+Compiling module xil_defaultlib.eth_mac
+Compiling module xil_defaultlib.eth_mac_rx_fifo_default
+Compiling module xil_defaultlib.thinpad_top
+Compiling module xil_defaultlib.clock
+Compiling module xil_defaultlib.flag_sync_cpld
+Compiling module xil_defaultlib.cpld_model
+Compiling module xil_defaultlib.sram_model
+Compiling module xil_defaultlib.DataErrorModule
+Compiling module xil_defaultlib.CUIdecoder1_2
+Compiling module xil_defaultlib.CUIdecoder_Busy1_1
+Compiling module xil_defaultlib.CUIdecoder2_2
+Compiling module xil_defaultlib.KernelModule_1
+Compiling module xil_defaultlib.ReadModule_1
+Compiling module xil_defaultlib.OutputBufferModule_1
+Compiling module xil_defaultlib.StatusRegModule_1
+Compiling module xil_defaultlib.MemoryModule(FILENAME_MEM="/tmp/...
+Compiling module xil_defaultlib.ProgramModule_1
+Compiling module xil_defaultlib.BuffEnhancedFactProgramModule_1
+Compiling module xil_defaultlib.ProtectRegModule_1
+Compiling module xil_defaultlib.EraseModule_1
+Compiling module xil_defaultlib.BlankCheckModule_1
+Compiling module xil_defaultlib.BlockLockModule_1
+Compiling module xil_defaultlib.ProgramBufferModule_1
+Compiling module xil_defaultlib.SignatureModule_1
+Compiling module xil_defaultlib.CFIqueryModule_1
+Compiling module xil_defaultlib.ConfigRegModule_1
+Compiling module xil_defaultlib.BurstModule_1
+Compiling module xil_defaultlib.BankLib
+Compiling module xil_defaultlib.TimingDataModule
+Compiling module xil_defaultlib.TimingLibModule_1
+Compiling module xil_defaultlib.DebugModule
+Compiling module xil_defaultlib.x28fxxxp30(FILENAME_MEM="/tmp/ke...
+Compiling module xil_defaultlib.rgmii_model_default
+WARNING: [XSIM 43-3373] "C:/codes/thinpad_top/thinpad_top.srcs/sim_1/new/rgmii_model.sv" Line 42. System function $fgets is used as system task. This system function should have a LHS e.g. x=$fgets().
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:17 . Memory (MB): peak = 726.121 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '17' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -view {C:/codes/thinpad_top/eth_mac_tri_eth_fifo_bhv.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config C:/codes/thinpad_top/eth_mac_tri_eth_fifo_bhv.wcfg
+WARNING: Simulation object /tb/dut/temac_fifo/tx_fifo_aclk was not found in the design.
+WARNING: Simulation object /tb/dut/temac_fifo/tx_fifo_resetn was not found in the design.
+WARNING: Simulation object /tb/dut/temac_fifo/tx_axis_fifo_tdata was not found in the design.
+WARNING: Simulation object /tb/dut/temac_fifo/tx_axis_fifo_tvalid was not found in the design.
+WARNING: Simulation object /tb/dut/temac_fifo/tx_axis_fifo_tlast was not found in the design.
+WARNING: Simulation object /tb/dut/temac_fifo/tx_axis_fifo_tready was not found in the design.
+WARNING: Simulation object /tb/dut/temac_fifo/tx_mac_aclk was not found in the design.
+WARNING: Simulation object /tb/dut/temac_fifo/tx_mac_resetn was not found in the design.
+WARNING: Simulation object /tb/dut/temac_fifo/tx_axis_mac_tdata was not found in the design.
+WARNING: Simulation object /tb/dut/temac_fifo/tx_axis_mac_tvalid was not found in the design.
+WARNING: Simulation object /tb/dut/temac_fifo/tx_axis_mac_tlast was not found in the design.
+WARNING: Simulation object /tb/dut/temac_fifo/tx_axis_mac_tready was not found in the design.
+WARNING: Simulation object /tb/dut/temac_fifo/tx_axis_mac_tuser was not found in the design.
+WARNING: Simulation object /tb/dut/temac_fifo/tx_fifo_overflow was not found in the design.
+WARNING: Simulation object /tb/dut/temac_fifo/tx_fifo_status was not found in the design.
+WARNING: Simulation object /tb/dut/temac_fifo/tx_collision was not found in the design.
+WARNING: Simulation object /tb/dut/temac_fifo/tx_retransmit was not found in the design.
+WARNING: Simulation object /tb/dut/temac_fifo/rx_fifo_aclk was not found in the design.
+WARNING: Simulation object /tb/dut/temac_fifo/rx_fifo_resetn was not found in the design.
+WARNING: Simulation object /tb/dut/temac_fifo/rx_axis_fifo_tdata was not found in the design.
+WARNING: Simulation object /tb/dut/temac_fifo/rx_axis_fifo_tvalid was not found in the design.
+WARNING: Simulation object /tb/dut/temac_fifo/rx_axis_fifo_tlast was not found in the design.
+WARNING: Simulation object /tb/dut/temac_fifo/rx_axis_fifo_tready was not found in the design.
+WARNING: Simulation object /tb/dut/temac_fifo/rx_mac_aclk was not found in the design.
+WARNING: Simulation object /tb/dut/temac_fifo/rx_mac_resetn was not found in the design.
+WARNING: Simulation object /tb/dut/temac_fifo/rx_axis_mac_tdata was not found in the design.
+WARNING: Simulation object /tb/dut/temac_fifo/rx_axis_mac_tvalid was not found in the design.
+WARNING: Simulation object /tb/dut/temac_fifo/rx_axis_mac_tlast was not found in the design.
+WARNING: Simulation object /tb/dut/temac_fifo/rx_axis_mac_tuser was not found in the design.
+WARNING: Simulation object /tb/dut/temac_fifo/rx_fifo_status was not found in the design.
+WARNING: Simulation object /tb/dut/temac_fifo/rx_fifo_overflow was not found in the design.
+WARNING: Simulation object /tb/dut/temac_fifo/FULL_DUPLEX_ONLY was not found in the design.
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+[        0 ns]  --- Device is Busy  (start up time) --- 
+WARNING: file /tmp/main.bin could not be opened
+Failed to open BaseRAM init file
+BaseRAM Init Size(words):           0
+WARNING: file /tmp/eram.bin could not be opened
+Failed to open ExtRAM init file
+ExtRAM Init Size(words):           0
+[        0 ns]  ASynchronous Read Mode
+[        0 ns]  VDD Voltage is OK
+[        0 ns]  VDDQ Voltage is OK
+[        0 ns] Inizialize the Memory to default value
+WARNING: file /tmp/kernel.elf could not be opened
+[        0 ns] Warning: File: /tmp/kernel.elf not found
+[       60 ns]  --- Device is Ready (end of start-up time) --- 
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 735.063 ; gain = 8.941
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/tx_ptp_pkt_buff_init.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/CFImemory64Mb_top.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/CFImemory64Mb_bottom.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/example_frame.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/CFImemory64Mb_top.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/CFImemory64Mb_bottom.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/example_frame.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1e0777dd008c45fcbaffd6b18f2c35e9 --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_9 -L xbip_pipe_v3_0_5 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L axi_lite_ipif_v3_0_4 -L tri_mode_ethernet_mac_v9_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3363] function 'getTime' has no return value assignment [C:/codes/thinpad_top/thinpad_top.srcs/sim_1/new/include/TimingData.h:182]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+[        0 ns]  --- Device is Busy  (start up time) --- 
+WARNING: file /tmp/main.bin could not be opened
+Failed to open BaseRAM init file
+BaseRAM Init Size(words):           0
+WARNING: file /tmp/eram.bin could not be opened
+Failed to open ExtRAM init file
+ExtRAM Init Size(words):           0
+[        0 ns]  ASynchronous Read Mode
+[        0 ns]  VDD Voltage is OK
+[        0 ns]  VDDQ Voltage is OK
+[        0 ns] Inizialize the Memory to default value
+WARNING: file /tmp/kernel.elf could not be opened
+[        0 ns] Warning: File: /tmp/kernel.elf not found
+[       60 ns]  --- Device is Ready (end of start-up time) --- 
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 745.184 ; gain = 0.000
+run 10 us
+save_wave_config {C:/codes/thinpad_top/eth_mac_tri_eth_fifo_bhv.wcfg}
+save_wave_config {C:/codes/thinpad_top/eth_mac_tri_eth_fifo_bhv.wcfg}
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/tx_ptp_pkt_buff_init.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/CFImemory64Mb_top.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/CFImemory64Mb_bottom.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/example_frame.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/CFImemory64Mb_top.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/CFImemory64Mb_bottom.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/example_frame.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/common/eth_mac_block_reset_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_block_reset_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/common/eth_mac_block_sync_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_block_sync_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_clk_en_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_clk_en_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/physical/eth_mac_rgmii_v2_0_if.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_rgmii_v2_0_if
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_support
+INFO: [VRFC 10-2458] undeclared symbol gtx_mmcm_rst, assumed default net type wire [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support.v:152]
+INFO: [VRFC 10-2458] undeclared symbol gtx_mmcm_locked, assumed default net type wire [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support.v:153]
+INFO: [VRFC 10-2458] undeclared symbol idelayctrl_ready, assumed default net type wire [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support.v:161]
+INFO: [VRFC 10-2458] undeclared symbol idelayctrl_reset, assumed default net type wire [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support.v:163]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support_clocking.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_support_clocking
+INFO: [VRFC 10-2458] undeclared symbol clkout0, assumed default net type wire [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support_clocking.v:121]
+INFO: [VRFC 10-2458] undeclared symbol clkout1, assumed default net type wire [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support_clocking.v:123]
+INFO: [VRFC 10-2458] undeclared symbol clkout2, assumed default net type wire [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support_clocking.v:125]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support_resets.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_support_resets
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/pll_example/pll_example_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll_example_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/pll_example/pll_example.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll_example
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sim_1/new/28F640P30.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BankLib
+INFO: [VRFC 10-311] analyzing module TimingDataModule
+INFO: [VRFC 10-311] analyzing module TimingLibModule
+INFO: [VRFC 10-311] analyzing module BlockLockModule
+INFO: [VRFC 10-311] analyzing module CFIqueryModule
+INFO: [VRFC 10-311] analyzing module DataErrorModule
+INFO: [VRFC 10-311] analyzing module ConfigRegModule
+INFO: [VRFC 10-311] analyzing module SignatureModule
+INFO: [VRFC 10-311] analyzing module CUIdecoder1
+INFO: [VRFC 10-311] analyzing module CUIdecoder2
+INFO: [VRFC 10-311] analyzing module CUIdecoder_Busy1
+INFO: [VRFC 10-311] analyzing module EraseModule
+INFO: [VRFC 10-311] analyzing module MemoryModule
+INFO: [VRFC 10-311] analyzing module OutputBufferModule
+INFO: [VRFC 10-311] analyzing module ProgramModule
+INFO: [VRFC 10-311] analyzing module BuffEnhancedFactProgramModule
+INFO: [VRFC 10-311] analyzing module ProtectRegModule
+INFO: [VRFC 10-311] analyzing module ReadModule
+INFO: [VRFC 10-311] analyzing module StatusRegModule
+INFO: [VRFC 10-311] analyzing module KernelModule
+INFO: [VRFC 10-311] analyzing module x28fxxxp30
+INFO: [VRFC 10-311] analyzing module BurstModule
+INFO: [VRFC 10-311] analyzing module BlankCheckModule
+INFO: [VRFC 10-311] analyzing module ProgramBufferModule
+INFO: [VRFC 10-311] analyzing module DebugModule
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/SEG7_LUT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SEG7_LUT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/async.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module async_transmitter
+INFO: [VRFC 10-311] analyzing module async_receiver
+INFO: [VRFC 10-311] analyzing module ASSERTION_ERROR
+INFO: [VRFC 10-311] analyzing module BaudTickGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sim_1/new/clock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'clk_50M' is not allowed [C:/codes/thinpad_top/thinpad_top.srcs/sim_1/new/clock.v:10]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sim_1/new/cpld_model.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpld_model
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/eth_conf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_conf
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/eth_mac_rx_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_rx_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/eth_mac_tx_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_tx_fifo
+ERROR: [VRFC 10-2989] 'state' is not declared [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/eth_mac_tx_fifo.v:111]
+ERROR: [VRFC 10-2865] module 'eth_mac_tx_fifo' ignored due to previous errors [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/eth_mac_tx_fifo.v:1]
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 797.879 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/tx_ptp_pkt_buff_init.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/CFImemory64Mb_top.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/CFImemory64Mb_bottom.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/example_frame.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/CFImemory64Mb_top.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/CFImemory64Mb_bottom.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/example_frame.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/common/eth_mac_block_reset_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_block_reset_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/common/eth_mac_block_sync_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_block_sync_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_clk_en_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_clk_en_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/physical/eth_mac_rgmii_v2_0_if.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_rgmii_v2_0_if
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_support
+INFO: [VRFC 10-2458] undeclared symbol gtx_mmcm_rst, assumed default net type wire [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support.v:152]
+INFO: [VRFC 10-2458] undeclared symbol gtx_mmcm_locked, assumed default net type wire [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support.v:153]
+INFO: [VRFC 10-2458] undeclared symbol idelayctrl_ready, assumed default net type wire [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support.v:161]
+INFO: [VRFC 10-2458] undeclared symbol idelayctrl_reset, assumed default net type wire [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support.v:163]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support_clocking.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_support_clocking
+INFO: [VRFC 10-2458] undeclared symbol clkout0, assumed default net type wire [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support_clocking.v:121]
+INFO: [VRFC 10-2458] undeclared symbol clkout1, assumed default net type wire [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support_clocking.v:123]
+INFO: [VRFC 10-2458] undeclared symbol clkout2, assumed default net type wire [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support_clocking.v:125]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support_resets.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_support_resets
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/pll_example/pll_example_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll_example_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/pll_example/pll_example.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll_example
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sim_1/new/28F640P30.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BankLib
+INFO: [VRFC 10-311] analyzing module TimingDataModule
+INFO: [VRFC 10-311] analyzing module TimingLibModule
+INFO: [VRFC 10-311] analyzing module BlockLockModule
+INFO: [VRFC 10-311] analyzing module CFIqueryModule
+INFO: [VRFC 10-311] analyzing module DataErrorModule
+INFO: [VRFC 10-311] analyzing module ConfigRegModule
+INFO: [VRFC 10-311] analyzing module SignatureModule
+INFO: [VRFC 10-311] analyzing module CUIdecoder1
+INFO: [VRFC 10-311] analyzing module CUIdecoder2
+INFO: [VRFC 10-311] analyzing module CUIdecoder_Busy1
+INFO: [VRFC 10-311] analyzing module EraseModule
+INFO: [VRFC 10-311] analyzing module MemoryModule
+INFO: [VRFC 10-311] analyzing module OutputBufferModule
+INFO: [VRFC 10-311] analyzing module ProgramModule
+INFO: [VRFC 10-311] analyzing module BuffEnhancedFactProgramModule
+INFO: [VRFC 10-311] analyzing module ProtectRegModule
+INFO: [VRFC 10-311] analyzing module ReadModule
+INFO: [VRFC 10-311] analyzing module StatusRegModule
+INFO: [VRFC 10-311] analyzing module KernelModule
+INFO: [VRFC 10-311] analyzing module x28fxxxp30
+INFO: [VRFC 10-311] analyzing module BurstModule
+INFO: [VRFC 10-311] analyzing module BlankCheckModule
+INFO: [VRFC 10-311] analyzing module ProgramBufferModule
+INFO: [VRFC 10-311] analyzing module DebugModule
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/SEG7_LUT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SEG7_LUT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/async.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module async_transmitter
+INFO: [VRFC 10-311] analyzing module async_receiver
+INFO: [VRFC 10-311] analyzing module ASSERTION_ERROR
+INFO: [VRFC 10-311] analyzing module BaudTickGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sim_1/new/clock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'clk_50M' is not allowed [C:/codes/thinpad_top/thinpad_top.srcs/sim_1/new/clock.v:10]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sim_1/new/cpld_model.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpld_model
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/eth_conf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_conf
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/eth_mac_rx_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_rx_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/eth_mac_tx_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_tx_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sim_1/new/flag_sync_cpld.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flag_sync_cpld
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sim_1/new/sram_model.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sram_model
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/thinpad_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module thinpad_top
+ERROR: [VRFC 10-2989] 'rx_axis_fifo_tdata' is not declared [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/thinpad_top.v:306]
+ERROR: [VRFC 10-2989] 'rx_axis_fifo_tvalid' is not declared [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/thinpad_top.v:307]
+ERROR: [VRFC 10-2989] 'rx_axis_fifo_tlast' is not declared [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/thinpad_top.v:308]
+ERROR: [VRFC 10-2989] 'rx_axis_fifo_tready' is not declared [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/thinpad_top.v:310]
+ERROR: [VRFC 10-2865] module 'thinpad_top' ignored due to previous errors [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/thinpad_top.v:3]
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 797.879 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/tx_ptp_pkt_buff_init.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/CFImemory64Mb_top.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/CFImemory64Mb_bottom.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/example_frame.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/CFImemory64Mb_top.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/CFImemory64Mb_bottom.mem'
+INFO: [SIM-utils-43] Exported 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim/example_frame.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/common/eth_mac_block_reset_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_block_reset_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/common/eth_mac_block_sync_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_block_sync_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_clk_en_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_clk_en_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/physical/eth_mac_rgmii_v2_0_if.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_rgmii_v2_0_if
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_support
+INFO: [VRFC 10-2458] undeclared symbol gtx_mmcm_rst, assumed default net type wire [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support.v:152]
+INFO: [VRFC 10-2458] undeclared symbol gtx_mmcm_locked, assumed default net type wire [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support.v:153]
+INFO: [VRFC 10-2458] undeclared symbol idelayctrl_ready, assumed default net type wire [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support.v:161]
+INFO: [VRFC 10-2458] undeclared symbol idelayctrl_reset, assumed default net type wire [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support.v:163]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support_clocking.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_support_clocking
+INFO: [VRFC 10-2458] undeclared symbol clkout0, assumed default net type wire [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support_clocking.v:121]
+INFO: [VRFC 10-2458] undeclared symbol clkout1, assumed default net type wire [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support_clocking.v:123]
+INFO: [VRFC 10-2458] undeclared symbol clkout2, assumed default net type wire [C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support_clocking.v:125]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac_support_resets.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_support_resets
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/eth_mac/synth/eth_mac.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/pll_example/pll_example_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll_example_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/ip/pll_example/pll_example.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll_example
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sim_1/new/28F640P30.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BankLib
+INFO: [VRFC 10-311] analyzing module TimingDataModule
+INFO: [VRFC 10-311] analyzing module TimingLibModule
+INFO: [VRFC 10-311] analyzing module BlockLockModule
+INFO: [VRFC 10-311] analyzing module CFIqueryModule
+INFO: [VRFC 10-311] analyzing module DataErrorModule
+INFO: [VRFC 10-311] analyzing module ConfigRegModule
+INFO: [VRFC 10-311] analyzing module SignatureModule
+INFO: [VRFC 10-311] analyzing module CUIdecoder1
+INFO: [VRFC 10-311] analyzing module CUIdecoder2
+INFO: [VRFC 10-311] analyzing module CUIdecoder_Busy1
+INFO: [VRFC 10-311] analyzing module EraseModule
+INFO: [VRFC 10-311] analyzing module MemoryModule
+INFO: [VRFC 10-311] analyzing module OutputBufferModule
+INFO: [VRFC 10-311] analyzing module ProgramModule
+INFO: [VRFC 10-311] analyzing module BuffEnhancedFactProgramModule
+INFO: [VRFC 10-311] analyzing module ProtectRegModule
+INFO: [VRFC 10-311] analyzing module ReadModule
+INFO: [VRFC 10-311] analyzing module StatusRegModule
+INFO: [VRFC 10-311] analyzing module KernelModule
+INFO: [VRFC 10-311] analyzing module x28fxxxp30
+INFO: [VRFC 10-311] analyzing module BurstModule
+INFO: [VRFC 10-311] analyzing module BlankCheckModule
+INFO: [VRFC 10-311] analyzing module ProgramBufferModule
+INFO: [VRFC 10-311] analyzing module DebugModule
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/SEG7_LUT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SEG7_LUT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/async.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module async_transmitter
+INFO: [VRFC 10-311] analyzing module async_receiver
+INFO: [VRFC 10-311] analyzing module ASSERTION_ERROR
+INFO: [VRFC 10-311] analyzing module BaudTickGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sim_1/new/clock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'clk_50M' is not allowed [C:/codes/thinpad_top/thinpad_top.srcs/sim_1/new/clock.v:10]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sim_1/new/cpld_model.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpld_model
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/eth_conf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_conf
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/eth_mac_rx_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_rx_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/eth_mac_tx_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_mac_tx_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sim_1/new/flag_sync_cpld.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flag_sync_cpld
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sim_1/new/sram_model.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sram_model
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/thinpad_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module thinpad_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/codes/thinpad_top/thinpad_top.srcs/sources_1/new/vga.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 797.879 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/codes/thinpad_top/thinpad_top.sim/sim_1/behav/xsim'

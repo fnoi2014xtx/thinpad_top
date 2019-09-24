@@ -229,7 +229,93 @@ vga #(12, 800, 856, 976, 1040, 600, 637, 643, 666, 1, 1) vga800x600at75 (
     .data_enable(video_de)
 );
 
+reg gtx_pre_resetn = 0, gtx_resetn = 0;
+
+always @(posedge clk_125M)
+begin
+    gtx_pre_resetn  <= 1;
+    gtx_resetn      <= gtx_pre_resetn;
+end
+
+
+wire [7:0] eth_rx_axis_fifo_tdata;
+wire eth_rx_axis_fifo_tvalid;
+wire eth_rx_axis_fifo_tlast;
+wire eth_rx_axis_fifo_tready;
+wire [7:0] eth_tx_axis_fifo_tdata;
+wire eth_tx_axis_fifo_tvalid;
+wire eth_tx_axis_fifo_tlast;
+wire eth_tx_axis_fifo_tready;
+
+
+eth_mac_fifo_block trimac_fifo_block (
+    .gtx_clk                        (clk_125M),
+    .refclk                         (clk_200M),
+
+    .glbl_rstn                      (eth_rst_n),
+    .rx_axi_rstn                    (eth_rst_n),
+    .tx_axi_rstn                    (eth_rst_n),
+
+    .rx_fifo_clock                  (clk_125M),
+    .rx_fifo_resetn                 (gtx_resetn),
+    .rx_axis_fifo_tdata             (eth_rx_axis_fifo_tdata),
+    .rx_axis_fifo_tvalid            (eth_rx_axis_fifo_tvalid),
+    .rx_axis_fifo_tready            (eth_rx_axis_fifo_tready),
+    .rx_axis_fifo_tlast             (eth_rx_axis_fifo_tlast),
+
+    .tx_ifg_delay                   (8'b0),
+    .tx_fifo_clock                  (clk_125M),
+    .tx_fifo_resetn                 (gtx_resetn),
+    .tx_axis_fifo_tdata             (eth_tx_axis_fifo_tdata),
+    .tx_axis_fifo_tvalid            (eth_tx_axis_fifo_tvalid),
+    .tx_axis_fifo_tready            (eth_tx_axis_fifo_tready),
+    .tx_axis_fifo_tlast             (eth_tx_axis_fifo_tlast),
+    
+    .pause_req                      (1'b0),
+    .pause_val                      (16'b0),
+
+    .rgmii_txd                      (eth_rgmii_td),
+    .rgmii_tx_ctl                   (eth_rgmii_tx_ctl),
+    .rgmii_txc                      (eth_rgmii_txc),
+    .rgmii_rxd                      (eth_rgmii_rd),
+    .rgmii_rx_ctl                   (eth_rgmii_rx_ctl),
+    .rgmii_rxc                      (eth_rgmii_rxc),
+
+    .rx_configuration_vector        (80'b10100000101110),
+    .tx_configuration_vector        (80'b10000000000110)
+);
+
+
+eth_mac_basic_pat_gen temac_pat_gen(
+    .axi_tclk                       (clk_125M),
+    .axi_tresetn                    (gtx_resetn),
+    //.check_resetn,
+
+    .enable_pat_gen                 (1'b0),
+    .enable_pat_chk                 (1'b0),
+    .enable_address_swap            (1'b1),
+    //.speed,
+
+    // data from the RX data path
+    .rx_axis_tdata                  (eth_rx_axis_fifo_tdata),
+    .rx_axis_tvalid                 (eth_rx_axis_fifo_tvalid),
+    .rx_axis_tlast                  (eth_rx_axis_fifo_tlast),
+    .rx_axis_tuser                  (1'b0),
+    .rx_axis_tready                 (eth_rx_axis_fifo_tready),
+    // data TO the TX data path
+    .tx_axis_tdata                  (eth_tx_axis_fifo_tdata),
+    .tx_axis_tvalid                 (eth_tx_axis_fifo_tvalid),
+    .tx_axis_tlast                  (eth_tx_axis_fifo_tlast),
+    .tx_axis_tready                 (eth_tx_axis_fifo_tready)
+
+    //.frame_error,
+    //.activity_flash
+);
+
+
+
 // 以太网 MAC 配置演示
+/*
 wire [7:0] eth_rx_axis_mac_tdata;
 wire eth_rx_axis_mac_tvalid;
 wire eth_rx_axis_mac_tlast;
@@ -242,7 +328,6 @@ wire eth_tx_axis_mac_tready;
 
 wire eth_rx_mac_aclk;
 wire eth_tx_mac_aclk;
-
 eth_mac eth_mac_inst (
     .gtx_clk(clk_125M),
     .refclk(clk_200M),
@@ -279,7 +364,40 @@ eth_mac eth_mac_inst (
     .rx_configuration_vector(80'b10100000101110),
     // transmit 1Gb/s | vlan | enable
     .tx_configuration_vector(80'b10000000000110)
-);
+);*/
 /* =========== Demo code end =========== */
+
+/*wire [7:0] tx_fifo_tdata,rx_fifo_tdata;
+wire tx_fifo_clk,tx_fifo_tvalid,tx_fifo_tlast,tx_fifo_tready;
+wire rx_fifo_clk,rx_fifo_tvalid,rx_fifo_tlast,rx_fifo_tready;
+*/
+/*eth_mac_rx_fifo rx_fifo(
+    .clk(eth_rx_mac_aclk),
+    
+    .s_axis_tdata(eth_rx_axis_mac_tdata),
+    .s_axis_tvalid(eth_rx_axis_mac_tvalid),
+    .s_axis_tlast(eth_rx_axis_mac_tlast),
+    .s_axis_tuser(eth_rx_axis_mac_tuser),
+    
+    .m_axis_tdata(rx_fifo_tdata),
+    .m_axis_tvalid(rx_fifo_tvalid),
+    .m_axis_tlast(rx_fifo_tlast),
+    .m_axis_tready(1'b1)
+);
+
+eth_mac_tx_fifo tx_fifo(
+    .clk(eth_tx_mac_aclk),
+    
+    .s_axis_tdata(rx_fifo_tdata),
+    .s_axis_tvalid(rx_fifo_tvalid),
+    .s_axis_tlast(rx_fifo_tlast),
+    .s_axis_tuser(1'b0),
+    .s_axis_tready(rx_fifo_tready),
+
+    .m_axis_tdata(eth_tx_axis_mac_tdata),
+    .m_axis_tvalid(eth_tx_axis_mac_tvalid),
+    .m_axis_tlast(eth_tx_axis_mac_tlast),
+    .m_axis_tready(eth_tx_axis_mac_tready)
+);*/
 
 endmodule
